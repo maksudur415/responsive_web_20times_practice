@@ -1,0 +1,303 @@
+/*** xlg ***/
+@media screen and (max-width: 1400px){
+    .container{
+
+    }
+}
+/*** lg ***/
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo {
+        flex-basis: 20%;
+        display: flex;
+        margin-right: 797px;
+    }
+    .tooMuchPractice {
+        margin-left: 379px;
+        max-width: 60%;
+        display: flex;
+        margin-top: -89px;
+    }
+    .feature{
+        padding: 30px 10px;
+    }
+    .feature img{
+        height: 70px;
+        margin-bottom: 8px;
+     }
+     .course ul li strong {
+        line-height: 14px;
+    }
+    .course ul li svg {
+        width: 15px;
+        height: 15px;
+    }
+    footer{
+        padding: 50px 0 20px;
+    }
+    footer ul {
+        padding: 0 10px;
+    }
+    footer ul li strong {
+        color: #bae4ba;
+        font-size: 25px;
+    }
+    .col_7_10 {
+        flex-basis: 98%;
+}
+.col_3_10 {
+    flex-basis: 96%;
+}
+}
+/*** md ***/
+
+@media screen and (max-width: 1000px){
+    .feature h3 {
+        font-size: 20px;
+    }
+    .tooMuchPractice {
+        margin-left: 228px;
+        /* max-width: 83%; */
+        /* margin-bottom: 21px; */
+        display: flex;
+        margin-top: -87px;
+    }
+    .logo {
+        /* display: flex; */
+        padding-left: 229px;
+    }
+
+    .feature span{
+        font-size: 14px;
+    }
+    h2{
+        padding-bottom: 20px;
+    }
+    .course h3 {
+        line-height: 20px;
+    }
+    .btn {
+        font-size: 16px;
+        line-height: 14px;
+        padding: 10px 20px;
+}
+.course ul{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 11px;
+}
+.course ul li strong {
+    line-height: 25px;
+}
+}
+/*** sm ***/
+@media screen and (max-width: 775px){
+   .bannerContent h1{
+    font-size: 36px;
+    line-height: 40px;
+   }
+   .tooMuchPractice {
+    margin-left: 138px;
+    /* max-width: 83%; */
+    /* margin-bottom: 21px; */
+    display: flex;
+    margin-top: -87px;
+}
+.logo {
+    display: flex;
+    padding-left: 251px;
+}
+   .feature h3 {
+    font-size: 22px;
+}
+   .bannerContent p{
+    font-size: 16px;
+    line-height: 21px;
+    margin: 10px 0;
+   }
+   .customer {
+    flex-basis: 21%;
+    padding: 10px;
+}
+.col_1_4 {
+    flex-basis: 50%;
+}
+
+}
+
+@media screen and (max-width:730){
+    .logo {
+        display: flex;
+        padding-left: 403px;
+    }
+    .logo {
+        /* display: flex; */
+        padding-left: 370px;
+    }
+}
+/*** xsm ***/
+@media screen and (max-width: 575px){
+    .conainer{
+        padding-left: 19px;
+        padding-right: 32px;
+    }
+    nav ul {
+        flex-basis: 65%;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: flex;
+        padding-left: 660px;
+        margin-top: -18px;
+    }
+    .tooMuchPractice {
+        margin-left: 92px;
+        max-width: 100%;
+        /* margin-bottom: 21px; */
+        display: flex;
+        margin-top: -56px;
+    }
+.customer{
+    flex-basis: 35%;
+}
+.col_1_3 {
+    flex-basis: 100%;
+    padding: 15px;
+}
+nav ul {
+    flex-basis: 76%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.feature {
+    padding: 32px 6px;
+    margin-top: 15px;
+}
+.copyright p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: #CDCDCD;
+}
+
+
+
+/* html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(SlateBlue, RoyalBlue);
+} */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+nav,
+nav ul {
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+}
+nav {
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3);
+  /* opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.25s; */
+}
+nav ul li {
+  display: table;
+  width: 100%;
+  height: calc(100% /4);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.15);
+  perspective: 0px;
+  transform: rotateX(-90deg) scale(0.5);
+  transition: all 0.3s ease 0.1s;
+}
+nav ul li a {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  color: #33c57e;
+  text-shadow: 0 0 3px rgba(104, 149, 132, 0.3);
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+}
+nav ul li a:hover {
+  background: rgba(49, 171, 147, 0.1);
+}
+#toggle {
+  display: none;
+}
+#toggle + #toggle-btn,
+.nav-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#toggle + #toggle-btn {
+  height: 40px;
+  width: 40px;
+  z-index: 1000;
+  background: rgba(252, 252, 252, 0.05);
+}
+.nav-icon,
+.nav-icon:before,
+.nav-icon:after {
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  margin: 18px 0;
+  z-index: 900;
+  border-radius: 3px;
+  background: #33c57e;
+  transition: all 0.25s;
+}
+.nav-icon:before {
+  content: "";
+  margin-top: -18px;
+}
+.nav-icon:after {
+  content: "";
+  margin-top: 18px;
+}
+#toggle:checked ~ nav {
+  opacity: 1;
+  transform: scale(0.8);
+}
+#toggle:checked ~ .nav-icon {
+  background: rgba(204, 4, 4, 0);
+}
+#toggle:checked ~ .nav-icon:before {
+  transform: rotate(-225deg);
+  margin-top: 0;
+}
+#toggle:checked ~ .nav-icon:after {
+  transform: rotate(225deg);
+  margin-top: 0;
+}
+#toggle:checked ~ nav ul li {
+  transform: rotateY(0deg) scale(1);
+}
+
+nav ul li .btn{
+    display: none;
+}
+
+
+}
